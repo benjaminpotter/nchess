@@ -1,10 +1,11 @@
 # nChess
+A simple chess game built with ncurses in C.
 
 ## Tasks
 - Start game
-    [x] display start screen
-    [x] new game
-    [ ] load game file
+[x] display start screen
+[x] new game
+[ ] load game file
 - Game play
     [x] setup pieces
     [x] display game board
