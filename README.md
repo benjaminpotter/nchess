@@ -14,7 +14,6 @@ A simple chess game built with ncurses in C.
     - [ ] flip board on turn change
     - [ ] only allow players to move their own pieces
     - [ ] allow players to undo last move 
-
     - [ ] only allow legal moves
 - Save game
     - [ ] serialize game data
