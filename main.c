@@ -35,13 +35,13 @@ typedef struct {
 WINDOW* w_start;
 WINDOW* w_game;
 WINDOW* w_exit;
-int game_state = PLAYING;
+int game_state = START;
 
 // drawing routines
 void draw_start(WINDOW* w) {
     mvwprintw(w, 10, 15, "nChess"); 
-    mvwprintw(w, 11, 15, "New Game");
-    mvwprintw(w, 12, 15, "Load Game");
+    mvwprintw(w, 11, 17, "(n) New Game");
+    mvwprintw(w, 12, 17, "(l) Load Game");
     wrefresh(w);
 }
 
@@ -183,7 +183,11 @@ int main(void) {
         switch(game_state) {
             case START:
                 draw_start(w_start);
-                break;
+                if(ch == 'n') {
+                    game_state = PLAYING;
+                } else {
+                    break;
+                }
 
             case PLAYING:
                 if(ch == 'd')
