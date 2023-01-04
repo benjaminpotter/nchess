@@ -1,3 +1,5 @@
 
 # any executables
 /bin/*
+
+.DS_Store
