@@ -1,7 +1,7 @@
 # nChess
 A simple chess game built with ncurses in C.
 
-![Sample display of the program.]("res/gameplay.png")
+![Sample display of the program.]("https://github.com/benjaminpotter/ncurses/blob/master/gameplay.png?raw=true")
 
 ## Tasks
 - Start game
